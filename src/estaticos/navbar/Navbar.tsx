@@ -38,7 +38,7 @@ function Navbar() {
             </Box>
 
             <Box mx={1} className="cursor">
-              <Link to="/home" className="text-decorator-none">
+              <Link to="/login" className="text-decorator-none">
                 <Typography variant="h6" color="inherit">
                   logout
                 </Typography>
