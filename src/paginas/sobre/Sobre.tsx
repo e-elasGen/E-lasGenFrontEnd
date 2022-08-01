@@ -1,7 +1,5 @@
 import React from "react";
 import './Sobre.css';
-import { Grid } from "@material-ui/core";
-import { Box } from "@mui/material";
 function sobre(){
     return(
     <>

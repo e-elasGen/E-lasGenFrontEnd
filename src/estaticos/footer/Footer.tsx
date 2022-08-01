@@ -17,13 +17,13 @@ function Footer(){
                             <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-nos nas redes sociais </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/e-elasGen" target="_blank">
+                            <a href="https://github.com/e-elasGen" rel="noreferrer" target="_blank">
                                 <GitHubIcon className='redes'/>
                             </a>
-                            <a href="https://www.instagram.com/maybalbino.ink/" target="_blank">
+                            <a href="https://www.instagram.com/maybalbino.ink/" rel="noreferrer" target="_blank">
                                 <InstagramIcon className='redes'/>
                             </a>
-                            <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                            <a href="https://www.linkedin.com/school/generationbrasil/" rel="noreferrer" target="_blank">
                                 <LinkedInIcon className='redes'/>
                             </a>
                         </Box>
@@ -33,7 +33,7 @@ function Footer(){
                             <Typography variant="subtitle2" align="center" gutterBottom className='textos'>© 2022 Copyright:</Typography>
                         </Box>
                         <Box>
-                            <a target="_blank" href="https://github.com/e-elasGen">
+                            <a target="_blank" href="https://github.com/e-elasGen" rel="noreferrer">
                                 <Typography variant="subtitle2" gutterBottom className='textos' align="center">E-lasGen</Typography>
                             </a>
                         </Box>
