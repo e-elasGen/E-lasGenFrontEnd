@@ -1,0 +1,21 @@
+.texto{
+    font-weight: bold !important;
+    color: #3F51B5;
+}
+
+.texto1{
+    color: black;
+}
+
+.imagem{
+    background-image: url(https://i.pinimg.com/564x/4f/07/96/4f079675d778f257a90b539e4a066ecb.jpg);
+    background-repeat:no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: container;
+    background-position: center;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
