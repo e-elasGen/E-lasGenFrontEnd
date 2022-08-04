@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" className="background-navbar" >
         <Toolbar variant="dense">
           <Box className="cursor" style={{ marginRight: "65%" }}>
             <Typography variant="h5" color="inherit">
