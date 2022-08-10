@@ -11,13 +11,16 @@ import Sobre from "./paginas/sobre/Sobre";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 
 function App() {
   return (
+    <Provider store = {store}>
     <Router>
       <Navbar />
-      <div style={{ minHeight: "67.20vh" }}>
+      <div style={{ minHeight: '100vh' }}>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
@@ -29,6 +32,7 @@ function App() {
       </div>
       <Footer />
     </Router>
+    </Provider>
   );
 }
 

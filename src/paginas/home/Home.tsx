@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typography, Grid, Button } from '@material-ui/core';
 import {Box} from '@mui/material'
 import './Home.css';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducer';
 
-function home() {
+
+    function home() {
+        let history = useNavigate();
+        const token = useSelector<TokenState, TokenState["tokens"]>(
+            (state) => state.tokens
+        );
+    
+        useEffect(() => {
+            if(token == ""){
+                alert("Você precisa estar logado")
+                history("/login")
+            }
+        }, [token])
+        
     return (
         <>
         <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa estilo-grid' >
