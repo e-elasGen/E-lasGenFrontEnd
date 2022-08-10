@@ -49,7 +49,6 @@ async function findById(id: string){
         console.log("categorias"+ JSON.stringify(categorias))
     
         if(id!==undefined) {
-            console.log(categorias)
             put(`/categorias`,categorias,setCategorias,{
                 headers:{
                 'Authorization': token
@@ -67,7 +66,7 @@ async function findById(id: string){
         back()
     }
     function back(){
-        History('/categorias')
+        History('/listacategorias')
     }
     return (
         <Container maxWidth="sm" className="topo">

@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import { Typography, Grid, Button } from '@material-ui/core';
 import {Box} from '@mui/material'
 import './Home.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
+import ModalProduto from './../../components/produtos/modalProduto/ModalProduto';
+import TabProduto from '../../components/produtos/tabProduto/TabProduto';
 
 
     function Home() {
@@ -30,14 +32,18 @@ import { TokenState } from '../../store/tokens/tokensReducer';
             </Box>
             <Box display="flex" justifyContent="center">
                 <Box marginRight={1}>
+                    <ModalProduto />
                 </Box>
+                <Link to="/produtos" className="text-decorator-none">
                 <Button variant="outlined" className='botao'>Ver e-commerce</Button>
+                </Link>
             </Box>
         </Grid>
         <Grid item xs={6} >
             <img src="https://i.imgur.com/7eETai7.jpeg" alt="" className='img'/>
         </Grid>
-        <Grid xs={12} className='postagens'>
+        <Grid xs={12} className='produtos'>
+            <TabProduto />
         </Grid>
     </Grid>
 </>

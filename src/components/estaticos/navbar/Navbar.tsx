@@ -50,9 +50,9 @@ if(token !== ""){
           </Typography>
         </Link>
       </Box>
-      <Link to='/categorias' className='text-decorator-none'>
+      <Link to='/listacategorias' className='text-decorator-none'>
             <Box>
-                <Typography variant="h6" color="inherit" className='menu' style={{ cursor: "pointer", color: "black" }}>
+                <Typography variant="h6" color="inherit" className='menu'>
                     categorias
                 </Typography>
             </Box>
@@ -60,7 +60,7 @@ if(token !== ""){
 
         <Link to='/formularioCategorias' className='text-decorator-none'>
             <Box>
-                <Typography variant="h6" color="inherit" className='menu' style={{ cursor: "pointer", color: "black" }}>
+                <Typography variant="h6" color="inherit" className='menu' >
                     cadastrar categorias
                 </Typography>
 

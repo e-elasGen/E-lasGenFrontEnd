@@ -6,7 +6,7 @@ import { TokenState } from "../../../store/tokens/tokensReducer";
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import Categorias from './../../../models/Categorias';
 import Produtos from './../../../models/Produtos';
-import { busca, buscaId, put } from "../../../services/Service";
+import { busca, buscaId, put , post} from "../../../services/Service";
 
 
 
@@ -121,11 +121,11 @@ function CadastroProduto() {
                 <TextField value={produtos.imagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="imagem" label="imagem" name="imagem" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Produto</InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label">Categoria</InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
-                        onChange={(e) => buscaId(`/categoria/${e.target.value}`, setProdutos, {
+                        onChange={(e) => buscaId(`/categorias/${e.target.value}`, setProdutos, {
                             headers: {
                                 'Authorization': token
                             }
@@ -136,7 +136,7 @@ function CadastroProduto() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um categoria para o produto</FormHelperText>
+                    <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
                     <Button type="submit" variant="contained" color="primary">
                         Finalizar
                     </Button>
@@ -147,6 +147,4 @@ function CadastroProduto() {
 }
 export default CadastroProduto;
 
-function post(arg0: string, produto: Produtos, setProduto: React.Dispatch<React.SetStateAction<Produtos>>, arg3: { headers: { Authorization: string; }; }) {
-    throw new Error("Function not implemented.");
-}
+
