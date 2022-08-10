@@ -27,10 +27,9 @@ function Navbar() {
   if (token !== "") {
     navbarComponent = (
       <AppBar position="static" className="background-navbar">
-        <Toolbar variant="dense">
+        <Toolbar variant="dense" className="container-navbar">
           <Box
             className="cursor container-navbar-logo"
-            style={{ marginRight: "65%" }}
           >
             <Typography variant="h5" color="inherit">
               E-lasGen
@@ -41,6 +40,7 @@ function Navbar() {
             justifyContent="start"
             className="container-navbar-menu"
           >
+
             <Box mx={1} className="cursor">
               <Link to="/home" className="text-decorator-none">
                 <Typography variant="h6" color="inherit">
@@ -48,6 +48,7 @@ function Navbar() {
                 </Typography>
               </Link>
             </Box>
+
             <Box mx={1} className="cursor">
               <Link to="/produtos" className="text-decorator-none">
                 <Typography variant="h6" color="inherit">
@@ -67,7 +68,7 @@ function Navbar() {
             <Box>
               <Link to="/formulariocategorias" className="text-decorator-none">
                 <Typography variant="h6" color="inherit">
-                  Cadastro Categoria
+                  Cadastrar Categorias
                 </Typography>
               </Link>
             </Box>
