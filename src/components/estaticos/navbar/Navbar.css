@@ -1,7 +1,4 @@
-.cursor{
-    cursor:pointer;
-    cursor:white;
-}
+
 
 .text-decorator-none{
     text-decoration: none;
@@ -10,4 +7,19 @@
 
 .background-navbar {
     background-color: #831d1c !important;
+    display: flex;
+    padding: 15px;
+}
+
+.container-navbar-menu {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.container-navbar-logo {
+    width: 15vw;
+    cursor:pointer;
+    cursor:white;
 }
