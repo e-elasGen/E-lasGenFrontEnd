@@ -5,7 +5,6 @@ import Home from "./paginas/home/Home";
 import Login from "./paginas/login/Login";
 import Navbar from "./components/estaticos/navbar/Navbar";
 import Footer from "./components/estaticos/footer/Footer";
-import Produtos from "./components/estaticos/produtos/Produtos";
 import Sobre from "./paginas/sobre/Sobre";
 
 
@@ -13,6 +12,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import ListaProduto from './components/produtos/listaProduto/ListaProduto';
+import ListaCategorias from './components/categorias/listaCategorias/ListaCategorias';
+import DeletarCategorias from './components/categorias/deletarCategorias/DeletarCategorias';
+import DeletarProduto from './components/produtos/deletarProduto/DeletarProtudo';
+import CadastroProduto from './components/produtos/cadastroProduto/CadastroProduto';
+import CadastroCategorias from './components/categorias/cadastroCategorias/CadastroCategorias';
 
 
 function App() {
@@ -25,9 +30,19 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/produtos" element={<ListaProduto/>} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+          <Route path="/listacategorias" element={<ListaCategorias />} />
+
+          <Route path="/deletarcategorias/:id" element={<DeletarCategorias />} />
+          <Route path="/deletarprodutos/:id" element={<DeletarProduto />} />
+          
+          <Route path="/formularioprodutos" element={<CadastroProduto />} />
+          <Route path="/formularioprodutos/:id" element={<CadastroProduto />} />
+          <Route path="/formulariocategorias" element={<CadastroCategorias />} />
+          <Route path="/formulariocategorias/:id" element={<CadastroCategorias />} />
+
         </Routes>
       </div>
       <Footer />

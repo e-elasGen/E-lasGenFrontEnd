@@ -3,7 +3,10 @@ import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
+//import useLocalStorage from "react-use-localstorage";
+import Produtos from "../../../models/Produtos";
+import { buscaId, deleteId } from "../../../services/Service";
+import { TokenState } from "../../../store/tokens/tokensReducer";
 
 function DeletarProduto() {
 
@@ -12,11 +15,11 @@ function DeletarProduto() {
    let navigate = useNavigate();
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
-  );,
-    const [produto, setProduto] = useState<Produto>()
+  );
+    const [produtos, setProdutos] = useState<Produtos>()
   
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             alert("Você precisa estar logado")
             navigate("/login")
     

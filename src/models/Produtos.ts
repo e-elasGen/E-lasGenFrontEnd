@@ -8,7 +8,7 @@ interface Produtos {
     quantidade: number,
     preco: number,
     imagem: string,
-    categorias?: Categorias |null,
+    categorias?: Categorias | null,
 
 }
 

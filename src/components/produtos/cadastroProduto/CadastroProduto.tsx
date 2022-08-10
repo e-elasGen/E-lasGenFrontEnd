@@ -1,16 +1,19 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
+//import useLocalStorage from "react-use-localstorage";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import Categorias from './../../../models/Categorias';
+import Produtos from './../../../models/Produtos';
+import { busca, buscaId, put } from "../../../services/Service";
 
 
 
 function CadastroProduto() {
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const [categorias, setCategorias] = useState<Categoria[]>([])
+    const [categorias, setCategorias] = useState<Categorias[]>([])
    // const [token, setToken] = useLocalStorage('token');
    /* Um hook que é usado para obter o estado do token. */  
   const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -25,26 +28,26 @@ function CadastroProduto() {
         }
     }, [token])
 
-    const [categoria, setCategoria] = useState<Categoria>(
+    const [categoria, setCategoria] = useState<Categorias>(
         {
             id: 0,
             tipo: '',
             classe:""
         })
-    const [produto, setProduto] = useState<Produto>({
+    const [produtos, setProdutos] = useState<Produtos>({
         id: 0,
         nome: '',
         descricao: '',
-        quantidade: "",
-        preco:'',
+        quantidade: 0,
+        preco: 0,
         imagem:'',
-        categoria: null
+        categorias: null
     })
 
     useEffect(() => {
-        setProduto({
-            ...produto,
-            categoria: categoria
+        setProdutos({
+            ...produtos,
+            categorias: categoria
         })
     }, [categoria])
 
@@ -56,7 +59,7 @@ function CadastroProduto() {
     }, [id])
 
     async function getCategorias() {
-        await busca("/categoria", setCategorias, {
+        await busca("/categorias", setCategorias, {
             headers: {
                 'Authorization': token
             }
@@ -64,7 +67,7 @@ function CadastroProduto() {
     }
 
     async function findByIdProduto(id: string) {
-        await buscaId(`produtos/${id}`, setProduto, {
+        await buscaId(`produtos/${id}`, setProdutos, {
             headers: {
                 'Authorization': token
             }
@@ -73,10 +76,10 @@ function CadastroProduto() {
 
     function updatedProduto(e: ChangeEvent<HTMLInputElement>) {
 
-        setProduto({
-            ...produto,
+        setProdutos({
+            ...produtos,
             [e.target.name]: e.target.value,
-            categoria: categoria
+            categorias: categoria
         })
 
     }
@@ -85,19 +88,19 @@ function CadastroProduto() {
         e.preventDefault()
 
         if (id !== undefined) {
-            put(`/produtos`, produto, setProduto, {
+            put(`/produtos`, produtos, setProdutos, {
                 headers: {
                     'Authorization': token
                 }
             })
             alert('Produto atualizada com sucesso');
         } else {
-            post(`/produtos`, produto, setProduto, {
+            post(`/produtos`, produtos, setProdutos, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Produto cadastrada com sucesso');
+            alert('Produto cadastrado com sucesso');
         }
         back()
 
@@ -110,27 +113,30 @@ function CadastroProduto() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
-                <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
-                <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro de produtos</Typography>
+                <TextField value={produtos.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
+                <TextField value={produtos.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
+                <TextField value={produtos.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="quantidade" label="quantidade" name="quantidade" variant="outlined" margin="normal" fullWidth />
+                <TextField value={produtos.preco} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="preco" label="preco" name="preco" variant="outlined" margin="normal" fullWidth />
+                <TextField value={produtos.imagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduto(e)} id="imagem" label="imagem" name="imagem" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Produto </InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label">Produto</InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
-                        onChange={(e) => buscaId(`/categoria/${e.target.value}`, setProduto, {
+                        onChange={(e) => buscaId(`/categoria/${e.target.value}`, setProdutos, {
                             headers: {
                                 'Authorization': token
                             }
                         })}>
                         {
-                            produto.map(produto => (
-                                <MenuItem value={produto.id}>{produto.descricao}</MenuItem>
+                            categorias.map(categoria => (
+                                <MenuItem value={categoria.id}>{categoria.classe}</MenuItem>
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um produto para a postagem</FormHelperText>
+                    <FormHelperText>Escolha um categoria para o produto</FormHelperText>
                     <Button type="submit" variant="contained" color="primary">
                         Finalizar
                     </Button>
@@ -140,3 +146,7 @@ function CadastroProduto() {
     )
 }
 export default CadastroProduto;
+
+function post(arg0: string, produto: Produtos, setProduto: React.Dispatch<React.SetStateAction<Produtos>>, arg3: { headers: { Authorization: string; }; }) {
+    throw new Error("Function not implemented.");
+}

@@ -21,7 +21,7 @@ function CadastroCategorias() {
     classe:''
 })
 useEffect(() =>{
-	if(token==""){
+	if(token === ""){
 	alert("Você precisa estar logado")
 	History("/login")
 	}

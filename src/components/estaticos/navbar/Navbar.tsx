@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import { Box } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/TokensReducer';
-import { addToken } from '../../../store/tokens/Actions';
+import { addToken } from '../../../store/tokens/actions';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 
 
