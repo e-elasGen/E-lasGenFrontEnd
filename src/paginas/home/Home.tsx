@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 
 
-    function home() {
+    function Home() {
         let history = useNavigate();
         const token = useSelector<TokenState, TokenState["tokens"]>(
             (state) => state.tokens
@@ -43,4 +43,4 @@ import { TokenState } from '../../store/tokens/tokensReducer';
 </>
     );
 }
-export default home;
+export default Home;
