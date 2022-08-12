@@ -71,16 +71,19 @@ function Login() {
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
-                <Box padding={20}>
+            <Grid alignItems='center' xs={6} >
+                <Box padding={20}  className='container-login'>
+                    <Box >
+                        <img className='imagem' src="https://i.imgur.com/SoWe6xn.png" alt="" />
+                    </Box>
                     <form onSubmit={onSubmit}>
-                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='texto1'>Entrar</Typography>
-                         <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='usario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
-                         <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth/>
+                        
+                         <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='usario' label='Digite seu e-mail' variant='outlined' name='usuario' margin='normal' fullWidth />
+                         <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Digite sua senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth/>
                          <Box marginTop={2} textAlign='center'>
                            
-                                <Button type='submit' variant='contained' color='primary'>
-                                  Logar
+                                <Button type='submit'className="custom-btn btn" >
+                                    Logar
                                 </Button>
                               
                          </Box>
@@ -90,14 +93,11 @@ function Login() {
                             <Typography variant='subtitle1' gutterBottom align='center' >Não tem uma conta?</Typography>
                         </Box>
                             <Link to='/cadastrousuario' className='text-decorator-none'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='texto'>Cadastre-se</Typography>
+                            <Typography variant='subtitle1' gutterBottom align='center' className='texto-destaque'>Cadastre-se</Typography>
                             </Link>
                     </Box>
 
                 </Box>
-            </Grid>
-            <Grid xs={6} className='imagem'>
-
             </Grid>
         </Grid>
     )
