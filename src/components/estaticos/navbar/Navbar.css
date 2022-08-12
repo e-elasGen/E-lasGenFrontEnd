@@ -15,7 +15,8 @@
 .container-navbar-menu {
     width: 70%;
     display: flex;
-    justify-content: space-around!important;
+    justify-content: end!important;
+    gap: 25px;
     text-transform: uppercase;
 }
 
@@ -23,4 +24,6 @@
     width: 30%;
     cursor:pointer;
     cursor:white;
+    text-transform: uppercase;
+
 }

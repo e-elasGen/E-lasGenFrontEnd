@@ -98,14 +98,26 @@ async function findById(id: string){
     }
     return (
         <Container maxWidth="sm" className="topo">
+
             <form onSubmit ={onSubmit}>
+
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro de Categorias</Typography>
+<<<<<<< HEAD
                 <TextField value={categorias.classe} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="classe" label="classe" variant="outlined" name="classe" margin="normal" placeholder='Exemplo: Vestuário, Maquiagem, Acessórios...' fullWidth />
                 <TextField value={categorias.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="tipo" label="tipo" variant="outlined" name="tipo" margin="normal" placeholder='Exemplo: Camiseta, Batom, Colar...' fullWidth />                
+=======
+
+                <TextField value={categorias.classe} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="classe" label="classe" variant="outlined" name="classe" margin="normal" fullWidth />
+
+                <TextField value={categorias.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="tipo" label="tipo" variant="outlined" name="tipo" margin="normal" fullWidth />
+
+>>>>>>> 1601982a9fbdbd353265596a5594092f3bb10dbd
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>
+
             </form>
+            
         </Container>
     )
 }
