@@ -6,6 +6,7 @@ import { useNavigate, useParams} from 'react-router-dom';
 import './CadastroCategorias.css';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 
 function CadastroCategorias() {
@@ -22,7 +23,16 @@ function CadastroCategorias() {
 })
 useEffect(() =>{
 	if(token === ""){
-	alert("Você precisa estar logado")
+        toast.error('Você precisa estar logado',{
+            position: "top-right",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
 	History("/login")
 	}
 },[token])
@@ -54,14 +64,32 @@ async function findById(id: string){
                 'Authorization': token
                 }
             })
-            alert('Categorias atualizadas com sucesso');
+            toast.success('Categoria atualizada com sucesso',{
+                position: "top-right",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }else{
             post(`categorias`,categorias,setCategorias, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Categorias cadastradas com sucesso');
+            toast.success('Categoria cadastrada com sucesso',{
+                position: "top-right",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
         back()
     }
@@ -72,8 +100,8 @@ async function findById(id: string){
         <Container maxWidth="sm" className="topo">
             <form onSubmit ={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro de Categorias</Typography>
-                <TextField value={categorias.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="tipo" label="tipo" variant="outlined" name="tipo" margin="normal" fullWidth />
-                <TextField value={categorias.classe} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="classe" label="classe" variant="outlined" name="classe" margin="normal" fullWidth />
+                <TextField value={categorias.classe} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="classe" label="classe" variant="outlined" name="classe" margin="normal" placeholder='Exemplo: Vestuário, Maquiagem, Acessórios...' fullWidth />
+                <TextField value={categorias.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="tipo" label="tipo" variant="outlined" name="tipo" margin="normal" placeholder='Exemplo: Camiseta, Batom, Colar...' fullWidth />                
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>

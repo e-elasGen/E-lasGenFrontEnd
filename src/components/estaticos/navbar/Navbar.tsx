@@ -8,6 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToken } from "../../../store/tokens/actions";
 import { TokenState } from "../../../store/tokens/tokensReducer";
+import { toast } from "react-toastify";
 
 function Navbar() {
   let history = useNavigate();
@@ -18,7 +19,16 @@ function Navbar() {
 
   function goLogout() {
     dispatch(addToken(""));
-    alert("Usuário deslogado.");
+    toast.info('Usuário deslogado',{
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      theme: "colored",
+      progress: undefined,
+  });
     history("/login");
   }
 

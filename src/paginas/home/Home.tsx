@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import ModalProduto from './../../components/produtos/modalProduto/ModalProduto';
 import TabProduto from '../../components/produtos/tabProduto/TabProduto';
+import { toast } from 'react-toastify';
 
 
     function Home() {
@@ -17,7 +18,16 @@ import TabProduto from '../../components/produtos/tabProduto/TabProduto';
     
         useEffect(() => {
             if(token == ""){
-                alert("Você precisa estar logado")
+                toast.error('Você precisa estar logado',{
+                    position: "top-right",
+                    autoClose: 4000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                });
                 history("/login")
             }
         }, [token])

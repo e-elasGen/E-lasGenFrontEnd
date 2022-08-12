@@ -18,11 +18,14 @@ import DeletarCategorias from './components/categorias/deletarCategorias/Deletar
 import DeletarProduto from './components/produtos/deletarProduto/DeletarProtudo';
 import CadastroProduto from './components/produtos/cadastroProduto/CadastroProduto';
 import CadastroCategorias from './components/categorias/cadastroCategorias/CadastroCategorias';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
   return (
     <Provider store = {store}>
+        <ToastContainer />
     <Router>
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
@@ -39,7 +42,7 @@ function App() {
           <Route path="/deletarprodutos/:id" element={<DeletarProduto />} />
           
           <Route path="/formularioprodutos" element={<CadastroProduto />} />
-          <Route path="/formularioprodutos/:id" element={<CadastroProduto />} />
+          <Route path="/formularioProduto/:id" element={<CadastroProduto />} />
           <Route path="/formulariocategorias" element={<CadastroCategorias />} />
           <Route path="/formulariocategorias/:id" element={<CadastroCategorias />} />
 

@@ -8,6 +8,7 @@ import { Box } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import Produtos from '../../../models/Produtos';
+import { toast } from 'react-toastify';
 
 function ListaProduto() {
 
@@ -23,7 +24,16 @@ function ListaProduto() {
   e, em seguida, navegue até a página de login. */
   useEffect(() => {
     if (token === "") {
-      alert("Você precisa estar logado")
+      toast.error('Você precisa estar logado',{
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
       navigate("/login")
     }
   }, [token])
@@ -76,7 +86,7 @@ function ListaProduto() {
                       </Button>
                     </Box>
                   </Link>
-                  <Link to={`/deletarPostagem/${produtos.id}`} className="text-decorator-none">
+                  <Link to={`/deletarprodutos/${produtos.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="secondary">
                         deletar

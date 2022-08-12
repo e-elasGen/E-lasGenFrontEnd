@@ -2,6 +2,7 @@
 import axios from 'axios';
 
 
+
 /* Criando uma nova instância de axios com um baseURL. */
 export const api = axios.create({
     baseURL: 'https://elasgen.herokuapp.com/'
@@ -34,7 +35,7 @@ export const buscaId = async (url: any, setDado: any, header: any) => {
     setDado(resposta.data)
 }
 
-export const post = async (url: any, dados: any, setDado: any, header: any) => {
+export const post = async(url: any, dados: any, setDado: any, header: any) => {
     const resposta = await api.post(url, dados, header)
     setDado(resposta.data)
 }
