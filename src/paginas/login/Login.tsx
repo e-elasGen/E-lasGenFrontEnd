@@ -70,7 +70,7 @@ function Login() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className='container-box-login'>
             <Grid alignItems='center' xs={6} >
                 <Box padding={20}  className='container-login'>
                     <Box >
