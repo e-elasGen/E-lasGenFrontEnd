@@ -104,23 +104,31 @@ function CadastroUsuario() {
     }
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' className="container-cadastrar">
+
             <Grid item xs={12} sm={12} md={10} lg={8} xl={4} alignItems='center'>
-                <Box paddingX={10}>
+
+                <Box paddingX={10} className='container-formulario'>
+
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2' >Cadastre-se!</Typography>
+                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='titulo-cadastrar' >Cadastre-se!</Typography>
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth />
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='Confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
-                        <Box marginTop={2} textAlign='center'>
+                        <Box  className="container-botoes">
+                            
                             <Link to='/login' className="text-decorator-none">
-                                <Button variant='contained' color='secondary' className='btnCancelar'>
+
+                                <Button  className="custom-btn btn">
                                     Cancelar
                                 </Button>
+
                             </Link>
-                            <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
+
+                            <Button type='submit' className="custom-btn btn">
                                 Cadastrar
                             </Button>
+
                         </Box>
                     </form>
                 </Box>

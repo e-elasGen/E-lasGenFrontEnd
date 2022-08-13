@@ -70,12 +70,17 @@ function Login() {
     }
 
     return (
+
         <Grid container direction='row' justifyContent='center' alignItems='center' className='container-box-login'>
+
             <Grid alignItems='center' xs={12} sm={12} md={10} lg={8} xl={4} >
-                <Box padding={20}  className='container-login'>
+
+                <Box padding={10}  className='container-login'>
+
                     <Box >
                         <img className='imagem' src="https://i.imgur.com/SoWe6xn.png" alt="" />
                     </Box>
+
                     <form onSubmit={onSubmit}>
                         
                          <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='usario' label='Digite seu e-mail' variant='outlined' name='usuario' margin='normal' fullWidth className='container-input' />

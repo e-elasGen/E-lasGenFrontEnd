@@ -1,11 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
 .container-cadastrar {
     height: 100vh;
 }
 
-.textos2{
-   font-weight: bold !important;
+.container-formulario {
+    padding: 100px;
+    background: rgba(131, 30, 28, 0.116);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 100px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.btnCancelar{
-    margin-right: 20px !important;
+.titulo-cadastrar {
+    font-family: 'Parisienne', cursive!important;
+    font-weight: bold;
 }
+
+.container-botoes {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Botão */
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+           7px 7px 20px 0px rgba(0, 0, 0, .1),
+           4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+   }
+   
+   .btn {
+    background: linear-gradient(0deg, #d2738d 0%, #d2738d 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+   }
+   
+   .btn  {
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 50%;
+   }
+   
+   .btn:before,
+   .btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #d2738d;
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
+           -4px -4px 5px 0px rgba(255, 255, 255, .9),
+           7px 7px 20px 0px rgba(0, 0, 0, .2),
+           4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+   }
+   
+   .btn:before {
+    height: 0%;
+    width: 2px;
+   }
+   
+   .btn:after {
+    width: 0%;
+    height: 2px;
+   }
+   
+   .btn:hover {
+    color: #d2738d;
+    background: transparent;
+   }
+   
+   .btn:hover:before {
+    height: 100%;
+   }
+   
+   .btn:hover:after {
+    width: 100%;
+   }
+   
+   .btn span:before,
+   .btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #d2738d!important;
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
+           -4px -4px 5px 0px rgba(255, 255, 255, .9),
+           7px 7px 20px 0px rgba(0, 0, 0, .2),
+           4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+   }
+   
+   .btn span:before {
+    width: 2px;
+    height: 0%;
+   }
+   
+   .btn span:after {
+    height: 2px;
+    width: 0%;
+   }
+   
+   .btn span:hover:before {
+    height: 100%;
+   }
+   
+   .btn span:hover:after {
+    width: 100%;
+   }
