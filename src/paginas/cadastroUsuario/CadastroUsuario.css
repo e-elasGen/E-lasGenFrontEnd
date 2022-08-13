@@ -29,6 +29,11 @@
     padding: 15px;
 }
 
+.espacamento {
+    margin: 15px!important;
+    padding: 10px!important;
+}
+
 /* Botão */
 .custom-btn {
     width: 130px;

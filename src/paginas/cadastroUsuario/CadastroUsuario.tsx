@@ -119,13 +119,13 @@ function CadastroUsuario() {
                             
                             <Link to='/login' className="text-decorator-none">
 
-                                <Button  className="custom-btn btn">
+                                <Button  className="custom-btn btn espacamento">
                                     Cancelar
                                 </Button>
 
                             </Link>
 
-                            <Button type='submit' className="custom-btn btn">
+                            <Button type='submit' className="custom-btn btn espacamento">
                                 Cadastrar
                             </Button>
 

@@ -42,7 +42,9 @@ function Navbar() {
             className="cursor container-navbar-logo"
           >
             <Typography variant="h5" color="inherit">
-              E-lasGen
+            <Box >
+              <img className='logo' src="https://i.imgur.com/SoWe6xn.png" alt="logo da empresa elas gen" />
+            </Box>
             </Typography>
           </Box>
           <Box
