@@ -154,3 +154,16 @@
    .btn span:hover:after {
     width: 100%;
    }
+
+   .MuiOutlinedInput-root {
+   
+    color:black!important
+}
+
+.MuiInputLabel-animated{
+    color:#d2738d!important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: #d2738d !important;
+}
