@@ -1,3 +1,7 @@
+.container-box-login{
+    height: 100vh;
+}
+
 .texto-destaque{
     font-weight: bold !important;
     color: #d2738d;
@@ -35,10 +39,7 @@
     text-decoration: none;
 }
 
-
-
 .container-login{
-    margin: 40px ;
     background: rgba(131, 30, 28, 0.116);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0px );
