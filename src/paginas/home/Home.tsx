@@ -8,8 +8,9 @@ import { TokenState } from '../../store/tokens/tokensReducer';
 import ModalProduto from './../../components/produtos/modalProduto/ModalProduto';
 import TabProduto from '../../components/produtos/tabProduto/TabProduto';
 import { toast } from 'react-toastify';
-import CarouselPropaganda from './../../components/carousel/carouselPropaganda/CarouselPropaganda';
 import CarouselProduto from './../../components/carousel/carouselProduto/CarouselProduto';
+import CarouselDestaqueProdutos from './../../components/carousel/carouselDestaqueProdutos/CarouselDestaqueProdutos';
+import CarouselPropaganda from '../../components/carousel/carouselPropaganda/CarouselPropaganda';
 
 
 
@@ -39,13 +40,23 @@ import CarouselProduto from './../../components/carousel/carouselProduto/Carouse
         <>
         <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa estilo-grid' >
 
-        <Grid>
-            <CarouselPropaganda/>
-        </Grid>  
+            <Grid>
+                <CarouselDestaqueProdutos/>
+            </Grid>  
 
-        <Grid>
-            <CarouselProduto/>
-        </Grid>
+            <Grid>
+                <CarouselProduto/>
+            </Grid>
+
+            <Grid>
+                <CarouselPropaganda/>
+            </Grid>
+
+            <Grid>
+                <CarouselProduto/>
+            </Grid>
+
+
 
         <Grid alignItems="center" item xs={6}>
             <Box paddingX={20} >
