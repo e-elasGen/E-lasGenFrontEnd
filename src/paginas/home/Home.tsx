@@ -8,7 +8,8 @@ import { TokenState } from '../../store/tokens/tokensReducer';
 import ModalProduto from './../../components/produtos/modalProduto/ModalProduto';
 import TabProduto from '../../components/produtos/tabProduto/TabProduto';
 import { toast } from 'react-toastify';
-import Carousel from '../../components/carousel/CarouselPropaganda';
+import CarouselPropaganda from './../../components/carousel/carouselPropaganda/CarouselPropaganda';
+import CarouselProduto from './../../components/carousel/carouselProduto/CarouselProduto';
 
 
 
@@ -19,7 +20,7 @@ import Carousel from '../../components/carousel/CarouselPropaganda';
         );
     
         useEffect(() => {
-            if(token == ""){
+            if(token === ""){
                 toast.error('Você precisa estar logado',{
                     position: "top-right",
                     autoClose: 4000,
@@ -39,7 +40,11 @@ import Carousel from '../../components/carousel/CarouselPropaganda';
         <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa estilo-grid' >
 
         <Grid>
-            <Carousel/>
+            <CarouselPropaganda/>
+        </Grid>  
+
+        <Grid>
+            <CarouselProduto/>
         </Grid>
 
         <Grid alignItems="center" item xs={6}>
