@@ -8,6 +8,8 @@ import { TokenState } from '../../store/tokens/tokensReducer';
 import ModalProduto from './../../components/produtos/modalProduto/ModalProduto';
 import TabProduto from '../../components/produtos/tabProduto/TabProduto';
 import { toast } from 'react-toastify';
+import Carousel from '../../components/carousel/CarouselPropaganda';
+
 
 
     function Home() {
@@ -35,10 +37,16 @@ import { toast } from 'react-toastify';
     return (
         <>
         <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa estilo-grid' >
+
+        <Grid>
+            <Carousel/>
+        </Grid>
+
         <Grid alignItems="center" item xs={6}>
             <Box paddingX={20} >
                 <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Sejam bem vindes a E-lasGen!</Typography>
                 <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="left" className='titulo'>Um ecommerce pensado para que mulheres empreendedoras tenham um espaço acolhedor e empoderador para divulgar seus produtos.</Typography>
+                
             </Box>
             <Box display="flex" justifyContent="center">
                 <Box marginRight={1}>
