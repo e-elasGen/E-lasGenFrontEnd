@@ -12,9 +12,11 @@ function Footer() {
   return (
     <>
       <Grid alignItems="center" className="containerFooter" item xs={12}>
-        <Box className="box1">
-          <Box>
-          <Typography
+
+        <Box className="containerRodapePrincipal">
+          
+          <Box className="containerRodapePrincipalSobre">
+            <Typography
               variant="subtitle2"
               gutterBottom
               className="textos"
@@ -22,24 +24,48 @@ function Footer() {
             >
               SOBRE
             </Typography>
-             
-             Projeto final do bootcamp idealizado pela Generation Brasil,
+            Projeto final do bootcamp idealizado pela Generation Brasil,
             utilizando de técnicas de programação, soft skills e metodologias
             ágeis para construção dessa aplicação.
           </Box>
-          <Box display="flex" alignItems="center" justifyContent="center"></Box>
-        </Box>
-        <Box className="box2">
-          <Box>
-            <Typography
-              variant="subtitle2"
-              gutterBottom
-              className="textos"
-              align="center"
-            >
-              Copyright © 2022 Todos direitos reservados a ElasGen Generation
-            </Typography>
+
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            className="containerRodapePrincipalTecnologias"
+          >
+            TECNOLOGIAS USADAS
+            Java
+            Spring
+            MySql
+            JavaScript
+            ReactJs
+
           </Box>
+
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            className="containerRodapePrincipalLinks"
+          >
+            LINKS
+             Home 
+             Produtos
+              Sobre
+          </Box>
+        </Box>
+
+        <Box className="ContainerRodapeEnd">
+          <Typography
+            variant="subtitle2"
+            gutterBottom
+            className="rodapeEndTexto"
+            align="center"
+          >
+            Copyright © 2022 Todos direitos reservados a ElasGen Generation
+          </Typography>
         </Box>
       </Grid>
     </>

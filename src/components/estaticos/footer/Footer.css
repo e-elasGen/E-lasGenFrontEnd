@@ -2,23 +2,36 @@
     width: 100vw!important;
 }
 
-.box1{
-    background-color: #d2738d !important;
-    width: 100vw!important;
 
-}
 
-.box2{
-    background-color: #d2738d !important;
-    width: 100vw!important;
 
-}
 
 .redes{
     font-size: 60px!important;
     color:white;
 }
 
-.textos{
+.containerRodapePrincipal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box!important;
+    width: 100vw;
+    height: 40vh;
+    background-color: #d2738d !important;
+
+}
+
+.ContainerRodapeEnd{
+    background-color: #d2738d !important;
+    width: 100vw!important;
+    height: 10vh!important;
+    border: 1px solid rgb(248, 248, 248);
+}
+
+.rodapeEndTexto {
     color: white;
+    padding: 25px;
 }

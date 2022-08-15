@@ -14,7 +14,7 @@ function TabProduto() {
   return (
     <>
       <TabContext value={value} >
-        <AppBar position="static">
+        <AppBar position="static" className='containerTabProdutos'>
           <Tabs centered indicatorColor="secondary" onChange={handleChange}   className="container-tabela">
             <Tab label="Todos os produtos" value="1"/>
             <Tab label="Sobre-nós" value="2" />

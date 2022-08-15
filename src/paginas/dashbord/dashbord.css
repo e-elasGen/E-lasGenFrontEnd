@@ -1,0 +1,16 @@
+.containerDashbord {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.boxModalDashbord {
+    width: 50vw;
+    height: 20vh;
+}

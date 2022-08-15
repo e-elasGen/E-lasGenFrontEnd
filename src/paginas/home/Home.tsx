@@ -12,14 +12,15 @@ import CarouselProduto from './../../components/carousel/carouselProduto/Carouse
 import CarouselDestaqueProdutos from './../../components/carousel/carouselDestaqueProdutos/CarouselDestaqueProdutos';
 import CarouselPropaganda from '../../components/carousel/carouselPropaganda/CarouselPropaganda';
 import FaleConosco from './../../components/contato/faleConosco/FaleConosco';
+import Dashbord from '../dashbord/Dashbord';
 
 
 
     function Home() {
-        let history = useNavigate();
-        const token = useSelector<TokenState, TokenState["tokens"]>(
-            (state) => state.tokens
-        );
+        // let history = useNavigate();
+        // const token = useSelector<TokenState, TokenState["tokens"]>(
+        //     (state) => state.tokens
+        // );
     
         // useEffect(() => {
         //     if(token === ""){
@@ -70,27 +71,6 @@ import FaleConosco from './../../components/contato/faleConosco/FaleConosco';
                 <FaleConosco/>
             </Grid>
 
-
-
-        {/* <Grid alignItems="center" item xs={6}>
-            <Box paddingX={20} >
-                <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Sejam bem vindes a E-lasGen!</Typography>
-                <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="left" className='titulo'>Um ecommerce pensado para que mulheres empreendedoras tenham um espaço acolhedor e empoderador para divulgar seus produtos.</Typography>
-                
-            </Box>
-            <Box display="flex" justifyContent="center">
-                <Box marginRight={1}>
-                    <ModalProduto />
-                </Box>
-                <Link to="/produtos" className="text-decorator-none">
-                <Button variant="outlined" className='botao'>Ver e-commerce</Button>
-                </Link>
-            </Box>
-        </Grid> */}
-        
-        {/* <Grid xs={12} className='produtos'>
-            <TabProduto />
-        </Grid> */}
     </Grid>
 </>
     );

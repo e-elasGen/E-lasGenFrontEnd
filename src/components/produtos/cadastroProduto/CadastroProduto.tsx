@@ -29,21 +29,21 @@ function CadastroProduto() {
         (state) => state.tokens
     );
 
-    useEffect(() => {
-        if (token == '') {
-            toast.error('Você precisa estar logado',{
-                position: "top-right",
-                autoClose: 4000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                theme: "colored",
-                progress: undefined,
-            });
-            navigate('/login');
-        }
-    }, [token]);
+    // useEffect(() => {
+    //     if (token == '') {
+    //         toast.error('Você precisa estar logado',{
+    //             position: "top-right",
+    //             autoClose: 4000,
+    //             hideProgressBar: false,
+    //             closeOnClick: true,
+    //             pauseOnHover: false,
+    //             draggable: false,
+    //             theme: "colored",
+    //             progress: undefined,
+    //         });
+    //         navigate('/login');
+    //     }
+    // }, [token]);
 
     const [categoria, setCategoria] = useState<Categorias>({
         id: 0,

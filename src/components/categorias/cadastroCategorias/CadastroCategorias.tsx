@@ -107,9 +107,9 @@ async function findById(id: string){
                 <TextField value={categorias.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="tipo" label="tipo" variant="outlined" name="tipo" margin="normal" placeholder='Exemplo: Camiseta, Batom, Colar...' fullWidth />                
 
 
-                <TextField value={categorias.classe} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="classe" label="classe" variant="outlined" name="classe" margin="normal" fullWidth />
+                {/* <TextField value={categorias.classe} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="classe" label="classe" variant="outlined" name="classe" margin="normal" fullWidth />
 
-                <TextField value={categorias.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="tipo" label="tipo" variant="outlined" name="tipo" margin="normal" fullWidth />
+                <TextField value={categorias.tipo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedCategorias(e)}id="tipo" label="tipo" variant="outlined" name="tipo" margin="normal" fullWidth /> */}
 
 
                 <Button type="submit" variant="contained" color="primary">

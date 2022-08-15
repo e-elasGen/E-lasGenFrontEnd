@@ -20,6 +20,7 @@ import CadastroProduto from './components/produtos/cadastroProduto/CadastroProdu
 import CadastroCategorias from './components/categorias/cadastroCategorias/CadastroCategorias';
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Dashbord from './paginas/dashbord/Dashbord';
 
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
           <Route path="/formularioProduto/:id" element={<CadastroProduto />} />
           <Route path="/formulariocategorias" element={<CadastroCategorias />} />
           <Route path="/formulariocategorias/:id" element={<CadastroCategorias />} />
+
+          <Route path="/dashbord" element={<Dashbord />} />
 
         </Routes>
       </div>
