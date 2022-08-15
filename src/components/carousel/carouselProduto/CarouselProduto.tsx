@@ -30,27 +30,7 @@ function CarouselProduto() {
         className="mySwiper2"
       >
         <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-
+        
       </Swiper>
     </>
   );
