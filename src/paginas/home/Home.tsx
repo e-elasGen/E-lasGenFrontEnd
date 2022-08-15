@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 import CarouselProduto from './../../components/carousel/carouselProduto/CarouselProduto';
 import CarouselDestaqueProdutos from './../../components/carousel/carouselDestaqueProdutos/CarouselDestaqueProdutos';
 import CarouselPropaganda from '../../components/carousel/carouselPropaganda/CarouselPropaganda';
+import FaleConosco from './../../components/contato/faleConosco/FaleConosco';
 
 
 
@@ -44,7 +45,12 @@ import CarouselPropaganda from '../../components/carousel/carouselPropaganda/Car
                 <CarouselDestaqueProdutos/>
             </Grid>  
 
+
             <Grid>
+            <Box paddingX={1} >
+                <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="left" className='titulo'>Ofertas do dia
+                </Typography>
+            </Box>
                 <CarouselProduto/>
             </Grid>
 
@@ -53,7 +59,15 @@ import CarouselPropaganda from '../../components/carousel/carouselPropaganda/Car
             </Grid>
 
             <Grid>
+            <Box paddingX={1} >
+                <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="left" className='titulo'>Baseado no seu carrinho de compras
+                </Typography>
+            </Box>
                 <CarouselProduto/>
+            </Grid>
+
+            <Grid>
+                <FaleConosco/>
             </Grid>
 
 
@@ -73,9 +87,7 @@ import CarouselPropaganda from '../../components/carousel/carouselPropaganda/Car
                 </Link>
             </Box>
         </Grid>
-        <Grid item xs={6} >
-            <img src="https://i.imgur.com/7eETai7.jpeg" alt="" className='img'/>
-        </Grid>
+        
         <Grid xs={12} className='produtos'>
             <TabProduto />
         </Grid>

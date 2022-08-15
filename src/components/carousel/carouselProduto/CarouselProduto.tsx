@@ -11,6 +11,7 @@ import "./CarouselProduto.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import CardProdutos from "../../card/cardProdutos/CardProdutos";
 
 function CarouselProduto() {
   return (
@@ -28,21 +29,27 @@ function CarouselProduto() {
         modules={[Pagination, Navigation]}
         className="mySwiper2"
       >
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/9agWvOC.png" alt="" /></SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos/> </SwiperSlide>
 
       </Swiper>
     </>
