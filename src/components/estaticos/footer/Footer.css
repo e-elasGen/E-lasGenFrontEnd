@@ -1,11 +1,17 @@
+.containerFooter{
+    width: 100vw!important;
+}
+
 .box1{
     background-color: #d2738d !important;
-    height: 120px;
+    width: 100vw!important;
+
 }
 
 .box2{
     background-color: #d2738d !important;
-    height: 60px;
+    width: 100vw!important;
+
 }
 
 .redes{

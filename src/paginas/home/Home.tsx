@@ -21,21 +21,21 @@ import FaleConosco from './../../components/contato/faleConosco/FaleConosco';
             (state) => state.tokens
         );
     
-        useEffect(() => {
-            if(token === ""){
-                toast.error('Você precisa estar logado',{
-                    position: "top-right",
-                    autoClose: 4000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    theme: "colored",
-                    progress: undefined,
-                });
-                history("/login")
-            }
-        }, [token])
+        // useEffect(() => {
+        //     if(token === ""){
+        //         toast.error('Você precisa estar logado',{
+        //             position: "top-right",
+        //             autoClose: 4000,
+        //             hideProgressBar: false,
+        //             closeOnClick: true,
+        //             pauseOnHover: false,
+        //             draggable: false,
+        //             theme: "colored",
+        //             progress: undefined,
+        //         });
+        //         history("/login")
+        //     }
+        // }, [token])
         
     return (
         <>
@@ -72,7 +72,7 @@ import FaleConosco from './../../components/contato/faleConosco/FaleConosco';
 
 
 
-        <Grid alignItems="center" item xs={6}>
+        {/* <Grid alignItems="center" item xs={6}>
             <Box paddingX={20} >
                 <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Sejam bem vindes a E-lasGen!</Typography>
                 <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="left" className='titulo'>Um ecommerce pensado para que mulheres empreendedoras tenham um espaço acolhedor e empoderador para divulgar seus produtos.</Typography>
@@ -86,11 +86,11 @@ import FaleConosco from './../../components/contato/faleConosco/FaleConosco';
                 <Button variant="outlined" className='botao'>Ver e-commerce</Button>
                 </Link>
             </Box>
-        </Grid>
+        </Grid> */}
         
-        <Grid xs={12} className='produtos'>
+        {/* <Grid xs={12} className='produtos'>
             <TabProduto />
-        </Grid>
+        </Grid> */}
     </Grid>
 </>
     );

@@ -10,6 +10,7 @@
     background-color: #d2738d !important;
     display: flex;
     padding: 15px;
+    width: 100vw!important;
 }
 
 .container-navbar-menu {

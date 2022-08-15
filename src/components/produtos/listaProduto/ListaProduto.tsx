@@ -22,21 +22,21 @@ function ListaProduto() {
 
   /* Verificando se o token está vazio e se estiver, alertará o usuário que ele precisa estar logado
   e, em seguida, navegue até a página de login. */
-  useEffect(() => {
-    if (token === "") {
-      toast.error('Você precisa estar logado',{
-        position: "top-right",
-        autoClose: 4000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: false,
-        theme: "colored",
-        progress: undefined,
-    });
-      navigate("/login")
-    }
-  }, [token])
+  // useEffect(() => {
+  //   if (token === "") {
+  //     toast.error('Você precisa estar logado',{
+  //       position: "top-right",
+  //       autoClose: 4000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: false,
+  //       draggable: false,
+  //       theme: "colored",
+  //       progress: undefined,
+  //   });
+  //     navigate("/login")
+  //   }
+  // }, [token])
 
   
 /**

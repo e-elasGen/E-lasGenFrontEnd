@@ -13,13 +13,13 @@ import { toast } from "react-toastify";
 function Navbar() {
   let history = useNavigate();
   const dispatch = useDispatch();
-  const token = useSelector<TokenState, TokenState["tokens"]>(
-    (state) => state.tokens
-  );
+  // const token = useSelector<TokenState, TokenState["tokens"]>(
+  //   (state) => state.tokens
+  // );
 
   function goLogout() {
     dispatch(addToken(""));
-    toast.info('Usuário deslogado',{
+    toast.info("Usuário deslogado", {
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,
@@ -28,23 +28,28 @@ function Navbar() {
       draggable: false,
       theme: "colored",
       progress: undefined,
-  });
+    });
     history("/login");
   }
 
-  var navbarComponent;
+  // var navbarComponent;
 
-  if (token !== "") {
-    navbarComponent = (
+  // if (token !== "") {
+  //   navbarComponent = (
+
+  return (
+    <>
       <AppBar position="static" className="background-navbar">
         <Toolbar variant="dense" className="container-navbar">
-          <Box
-            className="cursor container-navbar-logo"
-          >
+          <Box className="cursor container-navbar-logo">
             <Typography variant="h5" color="inherit">
-            <Box >
-              <img className='logo' src="https://i.imgur.com/SoWe6xn.png" alt="logo da empresa elas gen" />
-            </Box>
+              <Box>
+                <img
+                  className="logo"
+                  src="https://i.imgur.com/SoWe6xn.png"
+                  alt="logo da empresa elas gen"
+                />
+              </Box>
             </Typography>
           </Box>
           <Box
@@ -52,7 +57,6 @@ function Navbar() {
             justifyContent="start"
             className="container-navbar-menu"
           >
-
             <Box mx={1} className="cursor">
               <Link to="/home" className="text-decorator-none">
                 <Typography variant="h6" color="inherit">
@@ -69,21 +73,21 @@ function Navbar() {
               </Link>
             </Box>
 
-            <Box>
-              <Link to="/listacategorias" className="text-decorator-none">
-                <Typography variant="h6" color="inherit" className="menu">
-                  Categorias
-                </Typography>
-              </Link>
-            </Box>
+            {/* <Box>
+        <Link to="/listacategorias" className="text-decorator-none">
+          <Typography variant="h6" color="inherit" className="menu">
+            Categorias
+          </Typography>
+        </Link>
+      </Box> */}
 
-            <Box>
-              <Link to="/formulariocategorias" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
-                  Cadastrar Categorias
-                </Typography>
-              </Link>
-            </Box>
+            {/* <Box>
+        <Link to="/formulariocategorias" className="text-decorator-none">
+          <Typography variant="h6" color="inherit">
+            Cadastrar Categorias
+          </Typography>
+        </Link>
+      </Box> */}
 
             <Box mx={1} className="cursor">
               <Link to="/sobre" className="text-decorator-none">
@@ -101,9 +105,8 @@ function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-    );
-  }
-  return <>{navbarComponent}</>;
+      )
+    </>
+  );
 }
-
 export default Navbar;

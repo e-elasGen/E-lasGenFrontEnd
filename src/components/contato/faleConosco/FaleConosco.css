@@ -1,0 +1,20 @@
+.containerFaleConosco {
+    width: 100vw;
+    height: 45vh;
+    margin: 25px auto;
+    box-sizing: border-box!important;
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-rosa-com-ondas-abstratas_1393-257.jpg?w=2000');
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.containerFaleConoscoTitulo {
+    margin-bottom: 25px;
+}
+
+.faleConoscoTitulo {
+    font-size: 2em!important;
+    font-weight: 700!important;
+}
