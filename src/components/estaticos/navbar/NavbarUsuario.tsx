@@ -8,7 +8,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToken } from "../../../store/tokens/actions";
 import { TokenState } from "../../../store/tokens/tokensReducer";
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { toast } from "react-toastify";
+import { AddShoppingCart } from "@material-ui/icons";
 
 function NavbarUsuario() {
   let history = useNavigate();
@@ -110,6 +112,9 @@ function NavbarUsuario() {
                 Logout
               </Typography>
             </Box>
+            <Box>
+                <AddShoppingCart style={{ width: 60, color: "white" }} />
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>
@@ -182,6 +187,9 @@ function NavbarUsuario() {
                 logar
               </Typography>
             </Link>
+            </Box>
+            <Box>
+                <AddShoppingCart style={{ width: 60, color: "white" }} />
             </Box>
           </Box>
         </Toolbar>
