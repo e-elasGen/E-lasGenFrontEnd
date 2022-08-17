@@ -56,9 +56,9 @@ function NavbarUsuario() {
             justifyContent="start"
             className="container-navbar-menu"
           >
-            <Box mx={1} className="cursor">
+            <Box mx={1} className="cursor ">
               <Link to="/home" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="containerMenu">
                   Home
                 </Typography>
               </Link>
@@ -66,7 +66,7 @@ function NavbarUsuario() {
 
             <Box mx={1} className="cursor">
               <Link to="/produtos" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit"  className="containerMenu">
                   Produtos
                 </Typography>
               </Link>
@@ -74,7 +74,7 @@ function NavbarUsuario() {
 
             <Box mx={1} className="cursor">
               <Link to="/dashbord" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="containerMenu">
                   Dashbord
                 </Typography>
               </Link>
@@ -99,14 +99,14 @@ function NavbarUsuario() {
 
             <Box mx={1} className="cursor">
               <Link to="/sobre" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="containerMenu">
                   Sobre
                 </Typography>
               </Link>
             </Box>
 
             <Box mx={1} onClick={goLogout} className="cursor">
-              <Typography variant="h6" color="inherit">
+              <Typography variant="h6" color="inherit" className="containerMenu">
                 Logout
               </Typography>
             </Box>
@@ -136,7 +136,7 @@ function NavbarUsuario() {
           >
             <Box mx={1} className="cursor">
               <Link to="/home" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="containerMenu">
                   Home
                 </Typography>
               </Link>
@@ -144,7 +144,7 @@ function NavbarUsuario() {
 
             <Box mx={1} className="cursor">
               <Link to="/produtos" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="containerMenu">
                   Produtos
                 </Typography>
               </Link>
@@ -170,7 +170,7 @@ function NavbarUsuario() {
 
             <Box mx={1} className="cursor">
               <Link to="/sobre" className="text-decorator-none">
-                <Typography variant="h6" color="inherit">
+                <Typography variant="h6" color="inherit" className="containerMenu">
                   Sobre
                 </Typography>
               </Link>
@@ -178,7 +178,7 @@ function NavbarUsuario() {
 
             <Box mx={1}  className="cursor">
             <Link to="/login" className="text-decorator-none">
-              <Typography variant="h6" color="inherit">
+              <Typography variant="h6" color="inherit" className="containerMenu">
                 logar
               </Typography>
             </Link>

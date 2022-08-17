@@ -1,5 +1,13 @@
 import React from "react";
 import './Sobre.css';
+import { Box } from '@mui/material';
+import CardPerfilDarioReis from "../../components/card/card/cardPerfil/CardPerfilDarioReis";
+import CardPerfilLeoRampazi from "../../components/card/card/cardPerfil/CardPerfilLeoRampazi";
+import CardPerfilManoela from "../../components/card/card/cardPerfil/CardPerfilManoela";
+import CardPerfilFelipe from "../../components/card/card/cardPerfil/CardPerfilFelipe";
+import CardPerfilHercules from "../../components/card/card/cardPerfil/CardPerfilHercules";
+import CardPerfilVanessa from "../../components/card/card/cardPerfil/CardPerfilVanessa";
+import CardPerfilVini from "../../components/card/card/cardPerfil/CardPerfilVini";
 function sobre() {
     return (
         <>
@@ -14,6 +22,17 @@ function sobre() {
             <p>Projeto final do bootcamp idealizado pela Generation Brasil, utilizando de técnicas de programação, soft skills e metodologias ágeis para construção dessa aplicação.
 
             </p>
+
+            <Box className="ContainerPerfil">
+                <CardPerfilDarioReis/>
+                <CardPerfilLeoRampazi/>
+                <CardPerfilManoela/>
+                <CardPerfilFelipe/>
+                <CardPerfilHercules/>
+                <CardPerfilVanessa/>
+                <CardPerfilVini/>
+            </Box>
+            
 
         </>
     );

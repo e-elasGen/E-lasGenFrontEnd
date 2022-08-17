@@ -5,12 +5,18 @@
     color: aliceblue;
 }
 
+.containerMenu:hover {
+    border-bottom: 3px  solid rgb(255, 255, 255)!important;
+    border-top: 3px  solid rgb(252, 250, 250)!important;
+}
+
 
 .background-navbar {
     background-color: #d2738d !important;
     display: flex;
     padding: 15px;
     width: 100vw!important;
+    
 }
 
 .container-navbar-menu {
