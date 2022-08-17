@@ -8,6 +8,7 @@ import CardPerfilFelipe from "../../components/card/card/cardPerfil/CardPerfilFe
 import CardPerfilHercules from "../../components/card/card/cardPerfil/CardPerfilHercules";
 import CardPerfilVanessa from "../../components/card/card/cardPerfil/CardPerfilVanessa";
 import CardPerfilVini from "../../components/card/card/cardPerfil/CardPerfilVini";
+import CardPerfilRebeca from "../../components/card/card/cardPerfil/CardPerfilRebeca";
 function sobre() {
     return (
         <>
@@ -31,6 +32,7 @@ function sobre() {
                 <CardPerfilHercules/>
                 <CardPerfilVanessa/>
                 <CardPerfilVini/>
+                <CardPerfilRebeca/>
             </Box>
             
 
