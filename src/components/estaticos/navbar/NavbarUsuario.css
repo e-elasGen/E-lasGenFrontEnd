@@ -14,7 +14,6 @@
 .background-navbar {
     background-color: #d2738d !important;
     display: flex;
-    padding: 15px;
     width: 100vw!important;
     
 }
@@ -36,5 +35,5 @@
 }
 
 .logo {
-    width: 30%;
+    width: 270px;
 }
