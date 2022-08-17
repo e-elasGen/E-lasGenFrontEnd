@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavbarUsuario.css";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -10,12 +10,12 @@ import { addToken } from "../../../store/tokens/actions";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { toast } from "react-toastify";
 
-function Navbar() {
+function NavbarUsuario() {
   let history = useNavigate();
   const dispatch = useDispatch();
-  // const token = useSelector<TokenState, TokenState["tokens"]>(
-  //   (state) => state.tokens
-  // );
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  );
 
   function goLogout() {
     dispatch(addToken(""));
@@ -29,16 +29,15 @@ function Navbar() {
       theme: "colored",
       progress: undefined,
     });
-    history("/login");
+    history("/home");
   }
 
-  // var navbarComponent;
+  var navbarComponent;
+  var navbarComponentUsuario;
+  var navbarComponentAdmin;
 
-  // if (token !== "") {
-  //   navbarComponent = (
-
-  return (
-    <>
+   if (token !== "") {
+  navbarComponent = 
       <AppBar position="static" className="background-navbar">
         <Toolbar variant="dense" className="container-navbar">
           <Box className="cursor container-navbar-logo">
@@ -80,6 +79,7 @@ function Navbar() {
                 </Typography>
               </Link>
             </Box>
+            
 
             {/* <Box>
         <Link to="/listacategorias" className="text-decorator-none">
@@ -113,8 +113,89 @@ function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-      )
-    </>
-  );
+       }
+       if (token === "") {
+        navbarComponentUsuario = 
+      <AppBar position="static" className="background-navbar">
+        <Toolbar variant="dense" className="container-navbar">
+          <Box className="cursor container-navbar-logo">
+            <Typography variant="h5" color="inherit">
+              <Box>
+                <img
+                  className="logo"
+                  src="https://i.imgur.com/SoWe6xn.png"
+                  alt="logo da empresa elas gen"
+                />
+              </Box>
+            </Typography>
+          </Box>
+          <Box
+            display="flex"
+            justifyContent="start"
+            className="container-navbar-menu"
+          >
+            <Box mx={1} className="cursor">
+              <Link to="/home" className="text-decorator-none">
+                <Typography variant="h6" color="inherit">
+                  Home
+                </Typography>
+              </Link>
+            </Box>
+
+            <Box mx={1} className="cursor">
+              <Link to="/produtos" className="text-decorator-none">
+                <Typography variant="h6" color="inherit">
+                  Produtos
+                </Typography>
+              </Link>
+            </Box>
+
+            
+
+            {/* <Box>
+        <Link to="/listacategorias" className="text-decorator-none">
+          <Typography variant="h6" color="inherit" className="menu">
+            Categorias
+          </Typography>
+        </Link>
+      </Box> */}
+
+            {/* <Box>
+        <Link to="/formulariocategorias" className="text-decorator-none">
+          <Typography variant="h6" color="inherit">
+            Cadastrar Categorias
+          </Typography>
+        </Link>
+      </Box> */}
+
+            <Box mx={1} className="cursor">
+              <Link to="/sobre" className="text-decorator-none">
+                <Typography variant="h6" color="inherit">
+                  Sobre
+                </Typography>
+              </Link>
+            </Box>
+
+            <Box mx={1}  className="cursor">
+            <Link to="/login" className="text-decorator-none">
+              <Typography variant="h6" color="inherit">
+                logar
+              </Typography>
+            </Link>
+            </Box>
+          </Box>
+        </Toolbar>
+      </AppBar>
+        
+       
+       }
+       return (
+        <>
+     {navbarComponent}
+     {navbarComponentUsuario}
+    </> 
+    )
+
 }
-export default Navbar;
+
+export default NavbarUsuario;

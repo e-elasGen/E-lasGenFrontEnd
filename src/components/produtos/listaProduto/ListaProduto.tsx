@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import Produtos from '../../../models/Produtos';
 import { toast } from 'react-toastify';
+import './ListaProduto.css'
 
 function ListaProduto() {
 
@@ -61,7 +62,7 @@ function ListaProduto() {
       {
         Produtos.map(produtos => (
           <Box m={2} >
-            <Card variant="outlined">
+            <Card variant="outlined" className='CardLista'>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   Produto
