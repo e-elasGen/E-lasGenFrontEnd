@@ -21,7 +21,7 @@ import { Scrollbar } from "swiper";
         modules={[Scrollbar]}
         className="mySwiper3"
       >
-        <SwiperSlide><img src="https://thumbs.dreamstime.com/b/banner-de-propaganda-para-venda-no-dia-inicializa%C3%A7%C3%A3o-publicit%C3%A1rio-campanha-natal-design-promocional-brilhante-loja-200001187.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="https://tpc.googlesyndication.com/simgad/15396217378504755094?" alt="" /></SwiperSlide>
     
       </Swiper>
     </>
