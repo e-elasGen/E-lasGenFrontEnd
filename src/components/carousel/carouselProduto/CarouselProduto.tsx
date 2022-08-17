@@ -12,6 +12,11 @@ import "./CarouselProduto.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 import CardProdutos from "../../card/cardProdutos/CardProdutos";
+import CardProdutos2 from "../../card/cardProdutos/cardProdutos2";
+import CardProdutos3 from "../../card/cardProdutos/CardProdutos3";
+import CardProdutos4 from "../../card/cardProdutos/CardProdutos4";
+import CardProdutos5 from "../../card/cardProdutos/CardProdutos5";
+import CardProdutos6 from "../../card/cardProdutos/CardProdutos6";
 
 function CarouselProduto() {
   return (
@@ -30,11 +35,11 @@ function CarouselProduto() {
         className="mySwiper2"
       >
         <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos2/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos3/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos4/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos5/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos6/> </SwiperSlide>
       </Swiper>
     </>
   );
