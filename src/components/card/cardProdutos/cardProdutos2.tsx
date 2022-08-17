@@ -11,7 +11,7 @@ function CardProdutos2() {
         <Box className="card-img"> <img src="https://i.imgur.com/ZOKs72r.png" alt="" /> </Box>
         <Box className="card-info">
           <Typography className="text-title">Jaqueta customizada</Typography>
-          <p className="text-body">Jaqueta básica, aquele que vai com tudo, o tecido não é algodão e feita na mão.</p>
+          <p className="text-body">Jaqueta básica, aquela que vai com tudo, o tecido não é algodão e feita na mão.</p>
         </Box>
         <Box className="card-footer">
           <span className="text-title">R$390,00</span>
