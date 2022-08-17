@@ -35,22 +35,6 @@ function CarouselProduto() {
         <SwiperSlide> <CardProdutos/> </SwiperSlide>
         <SwiperSlide> <CardProdutos/> </SwiperSlide>
         <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-
       </Swiper>
     </>
   );

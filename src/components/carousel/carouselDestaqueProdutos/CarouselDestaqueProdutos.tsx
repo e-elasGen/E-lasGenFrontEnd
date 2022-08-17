@@ -32,12 +32,6 @@ import { Autoplay, Pagination, Navigation } from "swiper";
         <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
         <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
         <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.imgur.com/C6EuPtV.png" alt="" /></SwiperSlide>
       </Swiper>
     </>
   );

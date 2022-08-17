@@ -34,7 +34,7 @@ function NavbarUsuario() {
 
   var navbarComponent;
   var navbarComponentUsuario;
-  var navbarComponentAdmin;
+  //var navbarComponentAdmin;
 
    if (token !== "") {
   navbarComponent = 
