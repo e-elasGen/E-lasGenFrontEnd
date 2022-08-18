@@ -1,48 +1,58 @@
 import React from "react";
 import "./Footer.css";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Grid, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
-import { useSelector } from "react-redux";
-import { TokenState } from "../../../store/tokens/tokensReducer";
+import { Link } from "react-router-dom";
+
+
 
 function Footer() {
   return (
     <>
       <Grid alignItems="center" className="containerFooter" item xs={12}>
-
+        
         <Box className="containerRodapePrincipal">
+          <Box>
+              
+                <img
+                  className="logoFooter"
+                  src="https://i.imgur.com/SoWe6xn.png"
+                  alt="logo da empresa elasGen"
+                />
+                <Typography className="textoFooter">
+                 Siga-nos 
+                </Typography>
+                <Box className="imgFooter">
+
+                <img className="imgFooter1" src="https://i.imgur.com/eKUM40q.png" />
           
-          <Box className="containerRodapePrincipalSobre">
-            <Typography
-              variant="subtitle2"
-              gutterBottom
-              className="textos"
-              align="center"
-            >
-              SOBRE
-            </Typography>
-            Projeto final do bootcamp idealizado pela Generation Brasil,
-            utilizando de técnicas de programação, soft skills e metodologias
-            ágeis para construção dessa aplicação.
-          </Box>
+            <img className="imgFooter1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
 
-          <Box
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            className="containerRodapePrincipalTecnologias"
-          >
-            TECNOLOGIAS USADAS
-            Java
-            Spring
-            MySql
-            JavaScript
-            ReactJs
+            <img className="imgFooter1" src="https://i.imgur.com/TsFYaAs.png" />
+            </Box>
+            </Box>
+    
+          <Box flexDirection="column" className="textoFooter1">
+            <Link to="/home" className="text-decorator-none">
+            Home
+            </Link>
+            </Box>
 
-          </Box>
+            <Box flexDirection="column" className="textoFooter1">
+            <Link to="/produtos" className="text-decorator-none">
+            Shop
+            </Link>
+            </Box>
+
+            <Link to="/sobre" className="text-decorator-none">
+            About Us
+            </Link>
+
+            <Link to="/login" className="text-decorator-none">
+            Login
+            </Link>
+
+          
 
           <Box
             display="flex"
@@ -50,10 +60,7 @@ function Footer() {
             justifyContent="center"
             className="containerRodapePrincipalLinks"
           >
-            LINKS
-             Home 
-             Produtos
-              Sobre
+           
           </Box>
         </Box>
 
@@ -62,9 +69,8 @@ function Footer() {
             variant="subtitle2"
             gutterBottom
             className="rodapeEndTexto"
-            align="center"
           >
-            Copyright © 2022 Todos direitos reservados a ElasGen Generation
+            Copyright © 2022 Todos direitos reservados a E-lasGen
           </Typography>
         </Box>
       </Grid>

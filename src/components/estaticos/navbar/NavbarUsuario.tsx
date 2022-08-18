@@ -8,9 +8,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToken } from "../../../store/tokens/actions";
 import { TokenState } from "../../../store/tokens/tokensReducer";
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { toast } from "react-toastify";
 import { AddShoppingCart } from "@material-ui/icons";
+
+
 
 function NavbarUsuario() {
   let history = useNavigate();
@@ -45,11 +46,13 @@ function NavbarUsuario() {
           <Box className="cursor container-navbar-logo">
             <Typography variant="h5" color="inherit">
               <Box>
+              <Link to="/home" className="text-decorator-none">
                 <img
                   className="logo"
                   src="https://i.imgur.com/SoWe6xn.png"
-                  alt="logo da empresa elas gen"
+                  alt="logo da empresa elasGen"
                 />
+                </Link>
               </Box>
             </Typography>
           </Box>
@@ -69,7 +72,7 @@ function NavbarUsuario() {
             <Box mx={1} className="cursor">
               <Link to="/produtos" className="text-decorator-none">
                 <Typography variant="h6" color="inherit"  className="containerMenu">
-                  Produtos
+                Shop
                 </Typography>
               </Link>
             </Box>
@@ -102,18 +105,26 @@ function NavbarUsuario() {
             <Box mx={1} className="cursor">
               <Link to="/sobre" className="text-decorator-none">
                 <Typography variant="h6" color="inherit" className="containerMenu">
-                  Sobre
+                About Us
                 </Typography>
               </Link>
             </Box>
 
             <Box mx={1} onClick={goLogout} className="cursor">
-              <Typography variant="h6" color="inherit" className="containerMenu">
-                Logout
-              </Typography>
+              <img
+                  className="login"
+                  src="https://i.imgur.com/A2JuCIY.png"
+                  alt="logo de logout"
+                  title="Logout"
+                />
             </Box>
-            <Box>
-                <AddShoppingCart style={{ width: 60, color: "white" }} />
+            <Box className="cursor">
+            <img
+                  className="carrinhoNav"
+                  src="https://i.imgur.com/wOvunzK.png"
+                  alt="Shop"
+                  
+                />
             </Box>
           </Box>
         </Toolbar>
@@ -126,11 +137,13 @@ function NavbarUsuario() {
           <Box className="cursor container-navbar-logo">
             <Typography variant="h5" color="inherit">
               <Box>
+              <Link to="/home" className="text-decorator-none">
                 <img
                   className="logo"
                   src="https://i.imgur.com/SoWe6xn.png"
-                  alt="logo da empresa elas gen"
+                  alt="logo da empresa elasGen"
                 />
+                </Link>
               </Box>
             </Typography>
           </Box>
@@ -150,7 +163,7 @@ function NavbarUsuario() {
             <Box mx={1} className="cursor">
               <Link to="/produtos" className="text-decorator-none">
                 <Typography variant="h6" color="inherit" className="containerMenu">
-                  Produtos
+                  Shop
                 </Typography>
               </Link>
             </Box>
@@ -176,20 +189,27 @@ function NavbarUsuario() {
             <Box mx={1} className="cursor">
               <Link to="/sobre" className="text-decorator-none">
                 <Typography variant="h6" color="inherit" className="containerMenu">
-                  Sobre
+                  About Us
                 </Typography>
               </Link>
             </Box>
-
-            <Box mx={1}  className="cursor">
+            <Box>
             <Link to="/login" className="text-decorator-none">
-              <Typography variant="h6" color="inherit" className="containerMenu">
-                logar
-              </Typography>
+            <img
+                  className="login"
+                  src="https://i.imgur.com/flDd1wQ.png"
+                  alt="logo de login"
+                  title="Login"
+                />
             </Link>
             </Box>
-            <Box>
-                <AddShoppingCart style={{ width: 60, color: "white" }} />
+            <Box className="cursor">
+            <img
+                  className="carrinhoNav"
+                  src="https://i.imgur.com/wOvunzK.png"
+                  alt="Shop"
+                  
+                />
             </Box>
           </Box>
         </Toolbar>

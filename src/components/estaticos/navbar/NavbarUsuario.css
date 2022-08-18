@@ -2,17 +2,25 @@
 
 .text-decorator-none{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+}
+
+.containerMenu {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 .containerMenu:hover {
-    border-bottom: 3px  solid rgb(255, 255, 255)!important;
-    border-top: 3px  solid rgb(252, 250, 250)!important;
+    border-bottom: 3px  solid rgb(0, 0, 0)!important;
+    border-top: 3px  solid rgb(0, 0, 0)!important;
+   font-weight: bold;
 }
 
 
 .background-navbar {
-    background-color: #d2738d !important;
+    background-color: #E58787 !important;
     display: flex;
     width: 100vw!important;
     
@@ -35,5 +43,17 @@
 }
 
 .logo {
-    width: 270px;
+    width: 300px;
+    
+}
+
+.carrinhoNav {
+    color: black;
+    width: 45px !important;
+    margin-right: 15px !important;
+}
+
+.login {
+    width: 35px;
+    
 }
