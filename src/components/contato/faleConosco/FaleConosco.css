@@ -3,13 +3,13 @@
     height: 45vh;
     margin-bottom: 25px!important;
     box-sizing: border-box!important;
-    background-color: #FFBACC !important;
+    background-color: #FEE5E5 !important;
     display: flex!important;
    
 }
 
 .faleConoscoTitulo {
-   color: #EB3074 !important;
+   color: #d2738d !important;
    font-size: 30px !important;
    margin-left: 50px !important;
    margin-top: 30px !important;

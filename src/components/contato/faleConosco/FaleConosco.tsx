@@ -3,8 +3,19 @@ import { Box, Grid } from "@mui/material";
 import React from "react";
 import { toast } from "react-toastify";
 import "./FaleConosco.css";
-
-
+function Alert(e: any) {
+  e.preventDefault()
+toast.success('E-mail cadastrado com sucesso',{
+  position: "top-right",
+  autoClose: 4000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: false,
+  draggable: false,
+  theme: "colored",
+  progress: undefined,
+});
+}
 function FaleConosco() {
   return (
     <>
@@ -14,13 +25,13 @@ function FaleConosco() {
         <Typography className="faleConoscoTitulo">NEWSLETTER</Typography>
         </Box>
         <Box className="containerFaleConoscoTxt">
-          <Typography className="faleConoscoTxt">Cadastre seu e-mail e fique por dentro dos projetos e novidades.</Typography>
+          <Typography className="faleConoscoTxt">Cadastre seu e-mail e fique por dentro das novidades.</Typography>
         </Box>
         </Grid>
 
         <Grid xs={6} alignItems='center'>
         <Box className="inputs">
-          
+          <form>
           <TextField
             id="nome"
             label="Seu nome"
@@ -41,10 +52,11 @@ function FaleConosco() {
           />
           
           <Box className="btnInput">
-          <Button type="submit" className="custom-btn btn">
+          <Button onClick={Alert} type="submit" className="custom-btn btn">
             Cadastrar
           </Button>
           </Box>
+          </form>
         </Box>
         </Grid>
       </Grid>

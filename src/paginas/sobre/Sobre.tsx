@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 import './Sobre.css';
 import { Box } from '@mui/material';
-import CardPerfilDarioReis from "../../components/card/card/cardPerfil/CardPerfilDarioReis";
-import CardPerfilLeoRampazi from "../../components/card/card/cardPerfil/CardPerfilLeoRampazi";
-import CardPerfilManoela from "../../components/card/card/cardPerfil/CardPerfilManoela";
-import CardPerfilFelipe from "../../components/card/card/cardPerfil/CardPerfilFelipe";
-import CardPerfilHercules from "../../components/card/card/cardPerfil/CardPerfilHercules";
-import CardPerfilVanessa from "../../components/card/card/cardPerfil/CardPerfilVanessa";
-import CardPerfilVini from "../../components/card/card/cardPerfil/CardPerfilVini";
-import CardPerfilRebeca from "../../components/card/card/cardPerfil/CardPerfilRebeca";
-import { Typography } from '@material-ui/core';
+import CardPerfilDarioReis from '../../components/card/card/cardPerfil/CardPerfilDarioReis';
+import CardPerfilLeoRampazi from '../../components/card/card/cardPerfil/CardPerfilLeoRampazi';
+import CardPerfilManoela from '../../components/card/card/cardPerfil/CardPerfilManoela';
+import CardPerfilFelipe from '../../components/card/card/cardPerfil/CardPerfilFelipe';
+import CardPerfilHercules from '../../components/card/card/cardPerfil/CardPerfilHercules';
+import CardPerfilVanessa from '../../components/card/card/cardPerfil/CardPerfilVanessa';
+import CardPerfilVini from '../../components/card/card/cardPerfil/CardPerfilVini';
+import CardPerfilRebeca from '../../components/card/card/cardPerfil/CardPerfilRebeca';
+import { Avatar, Typography } from '@material-ui/core';
 
 function sobre() {
     return (
@@ -17,49 +17,172 @@ function sobre() {
             <Box className="ContainerBoxTitulo">
                 <Typography className="BoxTitulo">E-lasGen !</Typography>
             </Box>
+            <Box className="Container">
+                <Box className="ContainerBoxSubtitulo">
+                    <Typography className="BoxSubtitulo">Sobre nós</Typography>
+                </Box>
 
-            <Box className="ContainerBoxSubtitulo">
-                <Typography className="BoxSubtitulo">Objetivo</Typography>
+                <Box className="ContainerBoxDescricao">
+                    <Typography className="BoxDescricao">
+                        E-lasgen é um e-commerce que nasceu após observarmos o
+                        panorama do mercado de trabalho e concluirmos que a
+                        disparidade salarial de gêneros ainda é uma realidade em
+                        nosso país. Pensando nisso, criamos um projeto no qual a
+                        tecnologia da informação está a serviço do empoderamento
+                        feminino. Sendo assim, almejamos que esse seja um espaço
+                        acolhedor onde mulheres apoiam e incentivam umas às
+                        outras a alcaçarem seus objetivos profissionais,
+                        conquistando independência financeira e visibilidade de
+                        seus produtos. Acreditamos que a tecnologia é uma
+                        ferramenta capaz de gerar vínculos que vão além dos
+                        profissionais,quebrando barreiras geográficas,
+                        conectando histórias e ajudando pessoas a realizarem
+                        seus sonhos. "É pelo trabalho que a mulher vem
+                        diminuindo a distância que a separava do homem, somente
+                        o trabalho poderá garantir-lhe uma independência
+                        concreta." - Simone de Beauvoir.
+                    </Typography>
+                </Box>
             </Box>
+            <Box className="Container">
+                <Box className="ContainerBoxSubtitulo">
+                    <Typography className="BoxSubtitulo">
+                        Tecnologias
+                    </Typography>
+                </Box>
 
-            <Box className="ContainerBoxDescricao">
-                <Typography className="BoxDescricao">
-                A crise sanitária da COVID-19 tem resultado em uma queda substancial no emprego em diversos países do mundo, e os impactos têm se mostrado ainda mais acentuados para mulheres. Os desafios para ampliar a participação feminina no mercado de trabalho – que já eram significativos antes da pandemia – tornaram-se ainda mais críticos no contexto de crise que vivemos, fazendo com que países como o Brasil cheguem a patamares históricos que configuram retrocessos de mais de 30 anos.
-                </Typography>
-
-                <Typography className="BoxDescricao">
-                Nosso projeto visa movimentar a economia para mulheres, buscando incentivar o comércio e, com isso, aumentar e/ou gerar renda para mulheres que são responsáveis pelo sustento de suas familia e que se encontram em situação de instabilidade financeira devido a crise econômica que estamos vivendo no período “pós” pandemia.
-                </Typography>
+                <Box className="ContainerBoxImg">
+                    <Box className="imgSobre">
+                        <img
+                            height="75"
+                            width="90"
+                            title="Java"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="Spring Boot"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="MySQL"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="HTML"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="CSS"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="Javascript"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="Typescript"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="React"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="Material-UI"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="Redux"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                        />
+                    </Box>
+                    <Box className="imgSobre">
+                        <img
+                            height="60"
+                            width="70"
+                            title="Trello"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                        />
+                    </Box>
+                </Box>
             </Box>
-            
-
-
-            <Box className="ContainerBoxSubtitulo">
-                <Typography className="BoxSubtitulo">Sobre nós</Typography>
-            </Box>
-
-            <Box className="ContainerBoxDescricao">
-                <Typography className="BoxDescricao">
-                Projeto final do bootcamp idealizado pela Generation Brasil, utilizando de técnicas de programação, soft skills e metodologias ágeis para construção dessa aplicação.
-                </Typography>
-            </Box>
-
             <Box className="ContainerBoxSubtitulo Alinhamento">
-                <Typography className="BoxSubtitulo">Equipe de desenvolvimento</Typography>
+                <Typography className="BoxSubtitulo">
+                    Equipe de desenvolvimento
+                </Typography>
             </Box>
 
             <Box className="ContainerPerfil">
-                <CardPerfilLeoRampazi/>
-                <CardPerfilManoela/>
-                <CardPerfilFelipe/>
-                <CardPerfilHercules/>
-                <CardPerfilVanessa/>
-                <CardPerfilVini/>
-                <CardPerfilRebeca/>
-                <CardPerfilDarioReis/>
+                <CardPerfilLeoRampazi />
+                <CardPerfilManoela />
+                <CardPerfilFelipe />
+                <CardPerfilHercules />
+                <CardPerfilVanessa />
+                <CardPerfilVini />
+                <CardPerfilRebeca />
+                <CardPerfilDarioReis />
             </Box>
-            
 
+            <Box className="Container">
+                <Typography className="BoxSubtitulo1">
+                    Agradecimentos a May Balbino
+                </Typography>
+
+                <Box className="Boxavatar">
+                    <Avatar
+                        src="https://i.imgur.com/fY2rU11.jpg"
+                        className="avatarMay"
+                    />
+                    <Typography className="TxtMay">
+                    Empreendedora que trouxe de suas raízes a arte e a costura.
+                    Graduada em moda, May acessibiliza a arte por meio de suas
+                    costumizações em roupas, entre outros trabalhos que realiza.
+                    Gostaríamos de agradecer por aceitar, de prontidão,
+                    disponibilizar suas peças e valores para o nosso projeto.
+                    </Typography>
+                </Box>
+                <Typography className="TxtMay1">
+                    <a className="TxtMay1" href="https://www.instagram.com/maybalbino.ink/" target="_blank">
+                @maybalbino.ink
+                </a>
+                </Typography>
+            </Box>
         </>
     );
 }
