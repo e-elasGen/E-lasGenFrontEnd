@@ -1,21 +1,13 @@
 import React from 'react';
 import './Sobre.css';
 import { Box } from '@mui/material';
-import CardPerfilDarioReis from '../../components/card/card/cardPerfil/CardPerfilDarioReis';
-import CardPerfilLeoRampazi from '../../components/card/card/cardPerfil/CardPerfilLeoRampazi';
-import CardPerfilManoela from '../../components/card/card/cardPerfil/CardPerfilManoela';
-import CardPerfilFelipe from '../../components/card/card/cardPerfil/CardPerfilFelipe';
-import CardPerfilHercules from '../../components/card/card/cardPerfil/CardPerfilHercules';
-import CardPerfilVanessa from '../../components/card/card/cardPerfil/CardPerfilVanessa';
-import CardPerfilVini from '../../components/card/card/cardPerfil/CardPerfilVini';
-import CardPerfilRebeca from '../../components/card/card/cardPerfil/CardPerfilRebeca';
-import { Avatar, Typography } from '@material-ui/core';
+import { Avatar, Card, Typography } from '@material-ui/core';
 
 function sobre() {
     return (
         <>
             <Box className="ContainerBoxTitulo">
-                <Typography className="BoxTitulo">E-lasGen !</Typography>
+                <img src="https://static.tumblr.com/1de322660ae41439b38aeecebcdb2ab5/vgwyylt/DF2o841el/tumblr_static_7ypwyem2adwcgc4s8c048gccc.gif" className= "img10" />
             </Box>
             <Box className="Container">
                 <Box className="ContainerBoxSubtitulo">
@@ -142,23 +134,174 @@ function sobre() {
                     </Box>
                 </Box>
             </Box>
-            <Box className="ContainerBoxSubtitulo Alinhamento">
-                <Typography className="BoxSubtitulo">
-                    Equipe de desenvolvimento
+            <Box className="containerBackCard">
+                <Typography className="tituloCard">
+                    Equipe de Desenvolvimento
                 </Typography>
-            </Box>
+                <Box className="containerCard">
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://avatars.githubusercontent.com/u/85812823?v=4"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">Dário Reis</Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
 
-            <Box className="ContainerPerfil">
-                <CardPerfilLeoRampazi />
-                <CardPerfilManoela />
-                <CardPerfilFelipe />
-                <CardPerfilHercules />
-                <CardPerfilVanessa />
-                <CardPerfilVini />
-                <CardPerfilRebeca />
-                <CardPerfilDarioReis />
-            </Box>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://i.imgur.com/ngJEsNI.jpeg"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">
+                            Felipe Camilo
+                        </Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
 
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://avatars.githubusercontent.com/u/102184093?v=4"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">
+                            Hercules Lima
+                        </Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://avatars.githubusercontent.com/u/105321172?v=4"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">
+                            Leonardo Rampazi
+                        </Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                </Box>
+                <Box className="containerCard">
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://avatars.githubusercontent.com/u/106315497?v=4"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">
+                            Manoela Melo
+                        </Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://i.imgur.com/oAa6Cvr.jpeg"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">
+                            Rebeca Azevedo
+                        </Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://avatars.githubusercontent.com/u/106209900?v=4"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">
+                            Vanessa Bassilio
+                        </Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                    <Card className="cardDev">
+                        <Avatar
+                            src="https://avatars.githubusercontent.com/u/106260071?v=4"
+                            className="avatarCard"
+                        />
+                        <Typography className="TxtCard">
+                            Vinicius Silvestre
+                        </Typography>
+                        <Box>
+                            <img
+                                src="https://i.imgur.com/hGksNgM.png"
+                                className="imgDev1"
+                            />
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                className="imgDev"
+                            />
+                        </Box>
+                    </Card>
+                </Box>
+            </Box>
+            
             <Box className="Container">
                 <Typography className="BoxSubtitulo1">
                     Agradecimentos a May Balbino
@@ -170,17 +313,22 @@ function sobre() {
                         className="avatarMay"
                     />
                     <Typography className="TxtMay">
-                    Empreendedora que trouxe de suas raízes a arte e a costura.
-                    Graduada em moda, May acessibiliza a arte por meio de suas
-                    costumizações em roupas, entre outros trabalhos que realiza.
-                    Gostaríamos de agradecer por aceitar, de prontidão,
-                    disponibilizar suas peças e valores para o nosso projeto.
+                        Empreendedora que trouxe de suas raízes a arte e a
+                        costura. Graduada em moda, May acessibiliza a arte por
+                        meio de suas costumizações em roupas, entre outros
+                        trabalhos que realiza. Gostaríamos de agradecer por
+                        aceitar, de prontidão, disponibilizar suas peças e
+                        valores para o nosso projeto.
                     </Typography>
                 </Box>
                 <Typography className="TxtMay1">
-                    <a className="TxtMay1" href="https://www.instagram.com/maybalbino.ink/" target="_blank">
-                @maybalbino.ink
-                </a>
+                    <a
+                        className="TxtMay1"
+                        href="https://www.instagram.com/maybalbino.ink/"
+                        target="_blank"
+                    >
+                        @maybalbino.ink
+                    </a>
                 </Typography>
             </Box>
         </>
