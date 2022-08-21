@@ -146,15 +146,18 @@ function sobre() {
                         />
                         <Typography className="TxtCard">Dário Reis</Typography>
                         <Box>
+                            <a href= "https://github.com/darioreisjr" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/darioreisjr/" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                     <Card className="cardDev">
@@ -166,15 +169,18 @@ function sobre() {
                             Felipe Camilo
                         </Typography>
                         <Box>
+                        <a href= "https://github.com/Felipe1801" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/felipe-camilo-699b60239/" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                     <Card className="cardDev">
@@ -186,15 +192,18 @@ function sobre() {
                             Hercules Lima
                         </Typography>
                         <Box>
+                        <a href= "https://github.com/Herculeslbs" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/herculeslbs/" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                     <Card className="cardDev">
@@ -206,15 +215,18 @@ function sobre() {
                             Leonardo Rampazi
                         </Typography>
                         <Box>
+                        <a href= "https://github.com/Leonardo-Rampazi" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/leonardo-rampazi-159838230/" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                 </Box>
@@ -228,15 +240,18 @@ function sobre() {
                             Manoela Melo
                         </Typography>
                         <Box>
+                        <a href= "https://github.com/0manoela" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/manoela-melo-29b553238" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                     <Card className="cardDev">
@@ -248,15 +263,18 @@ function sobre() {
                             Rebeca Azevedo
                         </Typography>
                         <Box>
+                        <a href= "https://github.com/rebecaaaa" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/rebeca-azevedo-0165b8150/" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                     <Card className="cardDev">
@@ -268,15 +286,18 @@ function sobre() {
                             Vanessa Bassilio
                         </Typography>
                         <Box>
+                        <a href= "https://github.com/VanessaB063013" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/vanessa-basilio-/" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                     <Card className="cardDev">
@@ -288,15 +309,18 @@ function sobre() {
                             Vinicius Silvestre
                         </Typography>
                         <Box>
+                        <a href= "https://github.com/ViniSilvestre" target= "_blank">
                             <img
                                 src="https://i.imgur.com/hGksNgM.png"
                                 className="imgDev1"
                             />
-
+                            </a>
+                            <a href= "https://www.linkedin.com/in/vinisilvestre/" target= "_blank">
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
                                 className="imgDev"
                             />
+                            </a>
                         </Box>
                     </Card>
                 </Box>

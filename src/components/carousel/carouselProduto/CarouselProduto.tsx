@@ -17,6 +17,7 @@ import CardProdutos3 from "../../card/cardProdutos/CardProdutos3";
 import CardProdutos4 from "../../card/cardProdutos/CardProdutos4";
 import CardProdutos5 from "../../card/cardProdutos/CardProdutos5";
 import CardProdutos6 from "../../card/cardProdutos/CardProdutos6";
+import CardProduto from "../../card/cardProdutos/CardProduto";
 
 function CarouselProduto() {
   return (
@@ -34,8 +35,8 @@ function CarouselProduto() {
         modules={[Pagination, Navigation]}
         className="mySwiper2"
       >
-        <SwiperSlide> <CardProdutos/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos2/> </SwiperSlide>
+        <SwiperSlide> <CardProduto/> </SwiperSlide>
+        <SwiperSlide> <CardProduto/> </SwiperSlide>
         <SwiperSlide> <CardProdutos3/> </SwiperSlide>
         <SwiperSlide> <CardProdutos4/> </SwiperSlide>
         <SwiperSlide> <CardProdutos5/> </SwiperSlide>
