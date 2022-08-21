@@ -9,16 +9,9 @@
     margin-right: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
-
    }
    
-   .card-img {
-    background-color: #ffcaa6;
-    height: 200px;
-    width: 200px;
-    border-radius: .5rem;
-    
-   }
+   
    
    .card-info-lista {
     margin-top: 5px !important;
@@ -27,7 +20,6 @@
    .card-footer {
     width: 100%;
     display: flex;
-    
     align-items: center;
     margin-top: 10px;
     border-top: 1px solid #ddd;
@@ -49,9 +41,16 @@
    
    
    /*Hover*/
-   .card-img:hover {
+   .BoxImgLista:hover {
     transform: translateY(-5%);
     box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .BoxImgLista img {
+    height: 200px;
+    width: 200px;
+    border-radius: .5rem;
+    transition: .3s ease;
    }
    
    .ContainerLista {

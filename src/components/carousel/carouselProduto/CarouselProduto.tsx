@@ -26,21 +26,18 @@ function CarouselProduto() {
         slidesPerView={6}
         spaceBetween={30}
         slidesPerGroup={3}
-        loop={true}
+        
         loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
+        
+        
         className="mySwiper2"
       >
-        <SwiperSlide> <CardProduto/> </SwiperSlide>
-        <SwiperSlide> <CardProduto/> </SwiperSlide>
+        <SwiperSlide > <CardProdutos/> </SwiperSlide>
+        <SwiperSlide> <CardProdutos2/> </SwiperSlide>
         <SwiperSlide> <CardProdutos3/> </SwiperSlide>
         <SwiperSlide> <CardProdutos4/> </SwiperSlide>
         <SwiperSlide> <CardProdutos5/> </SwiperSlide>
-        <SwiperSlide> <CardProdutos6/> </SwiperSlide>
+        
       </Swiper>
     </>
   );

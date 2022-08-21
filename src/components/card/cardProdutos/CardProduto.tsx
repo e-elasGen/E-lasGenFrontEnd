@@ -10,6 +10,7 @@ import Produtos from "../../../models/Produtos";
 function CardProduto({nome, descricao, imagem,  preco} : any) {
   return (
     
+    
           <Box className="card">
         <Box className="card-img"> {imagem} </Box>
         <Box className="card-info">

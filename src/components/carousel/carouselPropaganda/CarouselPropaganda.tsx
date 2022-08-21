@@ -10,20 +10,14 @@ import "./CarouselPropaganda.css";
 
 // import required modules
 import { Scrollbar } from "swiper";
+import { Box } from "@mui/material";
 
  function CarouselPropaganda() {
   return (
     <>
-      <Swiper
-        scrollbar={{
-          hide: true,
-        }}
-        modules={[Scrollbar]}
-        className="mySwiper3"
-      >
-        <SwiperSlide><img src="https://tpc.googlesyndication.com/simgad/15396217378504755094?" alt="" /></SwiperSlide>
-    
-      </Swiper>
+    <Box className="BoxPropaganda">
+      <img className="ImgPropaganda" src="https://i.imgur.com/dOdoGPf.jpg" alt="" />
+    </Box>
     </>
   );
 }

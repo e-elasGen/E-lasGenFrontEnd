@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { busca } from '../../../services/Service'
-import { Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
+import { Card, CardActions, CardContent, Button, Typography, Grid, CardActionArea } from '@material-ui/core';
 //import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
@@ -59,6 +59,8 @@ function ListaProduto() {
   useEffect(() => {
     getProdutos()
   }, [Produtos.length])
+
+ 
   
   return (
     <>
@@ -66,14 +68,18 @@ function ListaProduto() {
      {Produtos.map(produtos => (
       <>
         <Box className="cardLista">
-        <Box className="card-img"> {produtos.imagem} </Box>
+        <CardActionArea>
+        <Box className="BoxImgLista">< img src={produtos.imagem}  /> </Box>
         <Box className="card-info-lista">
           <Typography className="textLista"> {produtos.nome}</Typography>
-          <p className="text-body">{produtos.descricao}</p>
+          <p className="textBody">{produtos.descricao}</p>
         </Box>
-        <Box className="card-footer">
-          <span className="text-title">R$ {produtos.preco}</span>
-          <Box>
+      
+          
+          </CardActionArea>
+
+          <Box className="card-footer">
+            <span className="text-title">R$ {produtos.preco}</span>
           <CardActions>
                 <Box display="flex" justifyContent="center" >
 
@@ -91,7 +97,7 @@ function ListaProduto() {
               </CardActions>
           </Box>
         </Box>
-      </Box>
+        
         </>
         ))} 
     </Box>
