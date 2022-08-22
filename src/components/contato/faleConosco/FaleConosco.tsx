@@ -19,7 +19,7 @@ toast.success('E-mail cadastrado com sucesso',{
 function FaleConosco() {
   return (
     <>
-      <Grid className="containerFaleConosco">
+      <Box className="containerFaleConosco">
         <Grid xs={6} alignItems="center">
         <Box className="containerFaleConoscoTxt">
         <Typography className="faleConoscoTitulo">NEWSLETTER</Typography>
@@ -59,7 +59,7 @@ function FaleConosco() {
           </form>
         </Box>
         </Grid>
-      </Grid>
+      </Box>
     </>
   );
 }

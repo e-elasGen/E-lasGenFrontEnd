@@ -160,13 +160,7 @@ function NavbarUsuario() {
               </Link>
             </Box>
 
-            <Box mx={1} className="cursor">
-              <Link to="/produtos" className="text-decorator-none">
-                <Typography variant="h6" color="inherit" className="containerMenu">
-                  Shop
-                </Typography>
-              </Link>
-            </Box>
+            
 
             
 

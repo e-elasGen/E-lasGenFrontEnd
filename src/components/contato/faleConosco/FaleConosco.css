@@ -1,8 +1,8 @@
 .containerFaleConosco {
-    width: 100vw;
+    width: 1350px !important;
     height: 45vh;
     margin-bottom: 25px!important;
-    box-sizing: border-box!important;
+    
     background-color: #FEE5E5 !important;
     display: flex!important;
    
@@ -25,6 +25,7 @@
     flex-direction: column!important;
     justify-content: flex-start!important;
     align-items: flex-start!important;
+    
 }
 
 .btnInput {

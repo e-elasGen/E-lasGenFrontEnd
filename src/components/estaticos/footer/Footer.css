@@ -5,7 +5,7 @@
 .containerRodapePrincipal{
     display: flex !important;
     box-sizing: border-box!important;
-    width: 100vw !important;
+    width: 100% !important;
     height: 40vh !important;
     background-color: #E58787 !important;
 
@@ -13,7 +13,7 @@
 
 .ContainerRodapeEnd{
     background-color: #E58787 !important;
-    width: 100vw!important;
+    width: 100%!important;
     height: 10vh!important;
     border-top: 1px solid rgb(0, 0, 0) !important;
 }
